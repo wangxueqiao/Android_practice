@@ -1,0 +1,132 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=11952, tid=8852
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_31-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.31-b07 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002d60800):  JavaThread "Unknown thread" [_thread_in_vm, id=8852, stack(0x0000000002bf0000,0x0000000002cf0000)]
+
+Stack: [0x0000000002bf0000,0x0000000002cf0000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3169ba]
+V  [jvm.dll+0x2674c3]
+V  [jvm.dll+0x268103]
+V  [jvm.dll+0x25f876]
+V  [jvm.dll+0x5e443]
+V  [jvm.dll+0x5e533]
+V  [jvm.dll+0x72e9a]
+V  [jvm.dll+0x73208]
+V  [jvm.dll+0xe4997]
+V  [jvm.dll+0xe4d26]
+V  [jvm.dll+0x1fa057]
+V  [jvm.dll+0x22b694]
+V  [jvm.dll+0x14d8c1]
+C  [javaw.exe+0x20c6]
+C  [javaw.exe+0xc9eb]
+C  [javaw.exe+0xca7f]
+C  [KERNEL32.DLL+0x1842]
+C  [ntdll.dll+0x302a9]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002d60800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8852, stack(0x0000000002bf0000,0x0000000002cf0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.016 loading class java/lang/CharSequence done
+Event: 0.017 loading class java/lang/String done
+Event: 0.017 loading class java/lang/Class
+Event: 0.017 loading class java/lang/reflect/AnnotatedElement
+Event: 0.017 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.017 loading class java/lang/reflect/GenericDeclaration
+Event: 0.017 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.017 loading class java/lang/reflect/Type
+Event: 0.017 loading class java/lang/reflect/Type done
+Event: 0.017 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x000007f72d7a0000 - 0x000007f72d7d4000 	D:\jdk1.8.0_31\bin\javaw.exe
+0x000007fcf2470000 - 0x000007fcf262d000 	C:\windows\SYSTEM32\ntdll.dll
+0x000007fcf2330000 - 0x000007fcf2467000 	C:\windows\system32\KERNEL32.DLL
+0x000007fcef3d0000 - 0x000007fcef4c4000 	C:\windows\system32\KERNELBASE.dll
+0x000007fce9910000 - 0x000007fce99ae000 	C:\windows\system32\apphelp.dll
+0x000007fcf0c80000 - 0x000007fcf0d5e000 	C:\windows\system32\ADVAPI32.dll
+0x000007fcf0d60000 - 0x000007fcf0eac000 	C:\windows\system32\USER32.dll
+0x000007fcecc60000 - 0x000007fcececa000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.17359_none_4188b989718cf1c6\COMCTL32.dll
+0x000007fcf0b60000 - 0x000007fcf0c05000 	C:\windows\system32\msvcrt.dll
+0x000007fcf0240000 - 0x000007fcf0288000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fcf21a0000 - 0x000007fcf22e5000 	C:\windows\system32\RPCRT4.dll
+0x000007fcf0300000 - 0x000007fcf0441000 	C:\windows\system32\GDI32.dll
+0x000007fcf22f0000 - 0x000007fcf2329000 	C:\windows\system32\IMM32.DLL
+0x000007fcf0a30000 - 0x000007fcf0b45000 	C:\windows\system32\MSCTF.dll
+0x00000000590d0000 - 0x00000000591a2000 	D:\jdk1.8.0_31\bin\msvcr100.dll
+0x0000000058300000 - 0x0000000058b5a000 	D:\jdk1.8.0_31\bin\server\jvm.dll
+0x000007fce7bd0000 - 0x000007fce7bd9000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x000007fceaab0000 - 0x000007fceaad0000 	C:\windows\SYSTEM32\WINMM.dll
+0x000007fceffa0000 - 0x000007fceffa7000 	C:\windows\system32\PSAPI.DLL
+0x000007fcefdd0000 - 0x000007fcefe28000 	C:\windows\system32\WS2_32.dll
+0x000007fceaa70000 - 0x000007fceaaa3000 	C:\windows\SYSTEM32\WINMMBASE.dll
+0x000007fcf0b50000 - 0x000007fcf0b59000 	C:\windows\system32\NSI.dll
+0x000007fcef4d0000 - 0x000007fcef51f000 	C:\windows\SYSTEM32\cfgmgr32.dll
+0x000007fcef520000 - 0x000007fcef542000 	C:\windows\system32\DEVOBJ.dll
+0x0000000059240000 - 0x000000005924f000 	D:\jdk1.8.0_31\bin\verify.dll
+0x0000000059210000 - 0x0000000059238000 	D:\jdk1.8.0_31\bin\java.dll
+0x00000000591f0000 - 0x0000000059206000 	D:\jdk1.8.0_31\bin\zip.dll
+0x000007fcdebb0000 - 0x000007fcded13000 	C:\windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:C:\Download\adt-bundle-windows-x86_64-20130917\sdk\platforms\android-18\android.jar 
+java_command: jinzhi
+java_class_path (initial): C:\Users\ÏíÎå\workspace\HelloWorld\bin\classes;C:\Users\ÏíÎå\workspace\HelloWorld\libs\android-support-v4.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=D:\jdk1.8.0_31\jre\lib\rt.jar;.;
+PATH=D:/jdk1.8.0_31/bin/server;D:/jdk1.8.0_31/bin;D:/jdk1.8.0_31/lib/amd64;D:\jdk1.8.0_31\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;D:\jdk1.8.0_31\bin;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files (x86)\Common Files\Autodesk Shared\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;;C:\Download\adt-bundle-windows-x86_64-20130917\eclipse;
+USERNAME=ÏíÎå
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 21 model 19 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 3302144k(1321948k free), swap 7103232k(3026480k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.31-b07) for windows-amd64 JRE (1.8.0_31-b13), built on Dec 17 2014 21:00:28 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Thu Jul 16 16:02:37 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
